@@ -9,7 +9,7 @@ const Header = () => {
          <header>
             <h1>
                <Fade bottom cascade>
-                  This Site Was Made With React and Node JS
+                  No, this site is not mobile friendly. Working on that right now.
                </Fade>
             </h1>
          </header>

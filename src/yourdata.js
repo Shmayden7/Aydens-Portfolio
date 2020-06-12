@@ -26,6 +26,16 @@ export default {
          imageSrc:
             "img/SD/satellite.jpg",
          url: "https://aydens-satellite-tracker.netlify.app/",
+         icons: [
+            {
+               key: 1,
+               link: 'img/icons/react.png',
+            },
+            {
+               key: 2,
+               link: 'img/icons/api.png',
+            },
+         ],
       },
       {
          id: 2,
@@ -35,6 +45,16 @@ export default {
          imageSrc:
             "img/SD/seafood.jpg",
          url: "http://chetanverma.com/",
+         icons: [
+            {
+               key: 1,
+               link: 'img/icons/react.png',
+            },
+            {
+               key: 2,
+               link: 'img/icons/firebase.png',
+            },
+         ],
       },
       {
          id: 3,
@@ -44,15 +64,58 @@ export default {
          imageSrc:
             "img/SD/covid19.jpg",
          url: "https://covid-19-tracker-ayden-c.netlify.app/",
+         icons: [
+            {
+               key: 1,
+               link: 'img/icons/react.png',
+            },
+            {
+               key: 2,
+               link: 'img/icons/api.png',
+            },
+         ],
       },
       {
          id: 4,
          title: "Personal Portfolio",
          service: "UX/UI Design, Styling CSS",
-         github: '',
+         github: 'https://github.com/Shmayden7/Aydens-Portfolio',
          imageSrc:
             "img/SD/portfolio.jpg",
-         url: "",
+         url: "#",
+         icons: [
+            {
+               key: 1,
+               link: 'img/icons/react.png',
+            },
+            {
+               key: 2,
+               link: 'img/icons/css.png',
+            },
+         ],
+      },
+      {
+         id: 4,
+         title: "Yelp Camp",
+         service: "First Website Made, REST/Express App",
+         github: 'https://github.com/Shmayden7/YelpCamp',
+         imageSrc:
+            "img/SD/yelpcamp.jpg",
+         url: "https://rocky-hamlet-79643.herokuapp.com/",
+         icons: [
+            {
+               key: 1,
+               link: 'img/icons/html.png',
+            },
+            {
+               key: 2,
+               link: 'img/icons/css.png',
+            },
+            {
+               key: 2,
+               link: 'img/icons/js.png',
+            },
+         ],
       },
    ],
    swProjects: [
@@ -71,7 +134,7 @@ export default {
          service: "Mulit-Component Assemblies, Motion Studies",
          drive: '',
          imageSrc:
-            "https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+            "img/CAD/inline6/1.jpg",
          url: "https://drive.google.com/file/d/1Km3ZFYk0DgRHVbrjNQoA1SHrRxyZL7hR/view?usp=sharing",
       },
       {
@@ -89,6 +152,14 @@ export default {
          drive: '',
          imageSrc: "img/CAD/donzi/1.jpg",
          url: "https://drive.google.com/file/d/1aX7jjEWutk5zWv3k3nNU4Wa3MwgZCXO_/view?usp=sharing",
+      },
+      {
+         id: 5,
+         title: "Geothermal Energy Concept",
+         service: "Renewable Energy, Flow Simulations",
+         drive: '',
+         imageSrc: "img/CAD/geotherm/1.jpg",
+         url: "",
       },
    ],
    social: [

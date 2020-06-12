@@ -1,8 +1,9 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import GitHubIcon from '@material-ui/icons/GitHub';
+import DevIcon from '../Icons/DevIcon';
 
-const DevProject = ({ title, github, service, imageSrc, url }) => {
+const DevProject = ({ title, github, service, imageSrc, url, icons }) => {
    return (
       <Fade bottom>
          <div className='project'>
@@ -11,6 +12,9 @@ const DevProject = ({ title, github, service, imageSrc, url }) => {
             </a>
             <h1>{title}<a href={github}><GitHubIcon/></a></h1>
             <span>{service}</span>
+            {icons.map((icon) => (
+               <DevIcon key={icon.key} link={icon.link}/>
+            ))}
          </div>
       </Fade>
    );

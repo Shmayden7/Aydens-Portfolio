@@ -35,6 +35,7 @@ const SoftwareDev = () => {
                   service={project.service}
                   imageSrc={project.imageSrc}
                   url={project.url}
+                  icons={project.icons}
                ></DevProject>
             ))}
          </div>

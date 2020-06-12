@@ -202,7 +202,7 @@ li .link:hover {
   grid-gap: 2em;
 }
 
-.project img {
+.project a img {
    width: 30em;
    height: 30em;
 }
@@ -217,6 +217,13 @@ li .link:hover {
    height: 1em;
    width: 1em;
    margin-left: 0.5em;
+}
+
+.little-icon{
+   height: 2em;
+   width: 2em;
+   margin-left: 1em;
+   vertical-align: middle;
 }
 
 .contact {
