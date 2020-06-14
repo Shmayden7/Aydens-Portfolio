@@ -12,7 +12,7 @@ export default {
    contactEmail: "ayden@modimages.com",
    // Add Your About Text Here
    abouttext:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Hi! I’m Ayden Cauchi, a 19 year old Biomedical Engineering student, studying at the University of Waterloo. I’d describe myself as a hard working, passionate, competitive individual, who enjoys going on outdoor adventures and spending time at the cottage with family. My favorite sports are hockey, football and competitive swimming.  ",
    aboutImage:
       "img/me/ayden.jpg",
    footballImage: 
@@ -123,7 +123,7 @@ export default {
          id: 1,
          title: "Modern Boathouse", 
          service: "Architectural Design, Motion Studies",
-         drive: '',
+         drive: 'https://drive.google.com/drive/folders/1-CBQ4ODoC7rQmT1lxFNNZnsGi3rH0ivL?usp=sharing',
          imageSrc:
             "img/CAD/modernBoathouse/1.jpg",
          url: "https://drive.google.com/file/d/1nr9yNRpOMUUtgV7XTACBC0JMPOVKGUtS/view?usp=sharing",
@@ -132,7 +132,7 @@ export default {
          id: 2,
          title: "Inline 6 Engine",
          service: "Mulit-Component Assemblies, Motion Studies",
-         drive: '',
+         drive: 'https://drive.google.com/drive/folders/1iY-jN_8zyAjyYKwnqauIp_LeIZ_41Lxu?usp=sharing',
          imageSrc:
             "img/CAD/inline6/1.jpg",
          url: "https://drive.google.com/file/d/1Km3ZFYk0DgRHVbrjNQoA1SHrRxyZL7hR/view?usp=sharing",
@@ -141,7 +141,7 @@ export default {
          id: 3,
          title: "Octa-Bridge",
          service: "Inspired By A Bridge In London, Motion Studies",
-         drive: '',
+         drive: 'https://drive.google.com/drive/folders/1NYeci2_3peGCz7r_m5P-yKW8NlfzWNrn?usp=sharing',
          imageSrc: "img/CAD/octaBridge/1.jpg",
          url: "https://drive.google.com/file/d/1lL8GNnudVJbf4-vHs4P8x_NGaWWhEntW/view?usp=sharing",
       },
@@ -149,7 +149,7 @@ export default {
          id: 4,
          title: "18ft Donzi",
          service: "Surfacing, Motion Studies",
-         drive: '',
+         drive: 'https://drive.google.com/drive/folders/1SDo5FQvk0iEMT8h1cs3ZL0u-gX7KRsm0?usp=sharing',
          imageSrc: "img/CAD/donzi/1.jpg",
          url: "https://drive.google.com/file/d/1aX7jjEWutk5zWv3k3nNU4Wa3MwgZCXO_/view?usp=sharing",
       },
@@ -157,8 +157,16 @@ export default {
          id: 5,
          title: "Geothermal Energy Concept",
          service: "Renewable Energy, Flow Simulations",
-         drive: '',
+         drive: 'https://drive.google.com/drive/folders/1kf5z-9TnSuAYKniq7oAH0KxeFzDElQ4g?usp=sharing',
          imageSrc: "img/CAD/geotherm/1.jpg",
+         url: "",
+      },
+      {
+         id: 5,
+         title: "Muskoka Style Bunkie",
+         service: "Architectural Design",
+         drive: 'https://drive.google.com/drive/folders/1KehG8LXd2dg7FxojF2onJuJHzqKDBHFg?usp=sharing',
+         imageSrc: "img/CAD/bunkie/1.jpg",
          url: "",
       },
    ],

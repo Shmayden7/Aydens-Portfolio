@@ -46,6 +46,12 @@ header h1 {
    margin-right: 50em;
 }
 
+.nav-bar{
+   background: white;
+   width: 10em;
+   height: 10em;
+}
+
 nav {
    position: fixed;
    left: 55em;
@@ -96,7 +102,7 @@ li .link:hover {
    background: black;
    border: 0px;
    padding: 1em 3em;
-   margin: 4em 2em;
+   margin: 3em 2em;
    transition: all 0.2s ease-out;
    -webkit-transition: all 0.2s ease-out;
    -moz-transition: all 0.2s ease-out;
