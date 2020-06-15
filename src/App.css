@@ -48,8 +48,6 @@ header h1 {
 
 .nav-bar{
    background: white;
-   width: 10em;
-   height: 10em;
 }
 
 nav {
@@ -230,6 +228,10 @@ li .link:hover {
    width: 2em;
    margin-left: 1em;
    vertical-align: middle;
+}
+
+.social-icon{
+   margin: 2em 2em;
 }
 
 .contact {

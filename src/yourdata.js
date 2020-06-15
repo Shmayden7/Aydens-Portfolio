@@ -12,7 +12,7 @@ export default {
    contactEmail: "ayden@modimages.com",
    // Add Your About Text Here
    abouttext:
-      "Hi! I’m Ayden Cauchi, a 19 year old Biomedical Engineering student, studying at the University of Waterloo. I’d describe myself as a hard working, passionate, competitive individual, who enjoys going on outdoor adventures and spending time at the cottage with family. My favorite sports are hockey, football and competitive swimming.  ",
+      "Hi! I’m Ayden Cauchi, a 19 year old Biomedical Engineering student, studying at the University of Waterloo. I’d describe myself as a hard working, passionate, competitive individual, who enjoys going on outdoor adventures and spending time at the cottage with family. My favourite sports are hockey, football and competitive swimming. In ten years time, I want to have a challenging, intresting, and fufilling carrier that allows to help others, travel around the world, and of course, make a lot of money.",
    aboutImage:
       "img/me/ayden.jpg",
    footballImage: 
@@ -170,15 +170,9 @@ export default {
          url: "",
       },
    ],
-   social: [
-      { name: "Github", url: "https://github.com/Shmayden7" },
-      {
-         name: "Instagram",
-         url: "https://www.instagram.com/ayden_cauchi/",
-      },
-      {
-         name: "Linked In",
-         url: "https://www.linkedin.com/in/ayden-c-85116510b",
-      },
-   ],
+   social: {
+      github: 'https://github.com/Shmayden7',
+      instagram: 'https://www.instagram.com/ayden_cauchi/?hl=en',
+      linkedin: 'https://www.linkedin.com/in/ayden-c-85116510b',
+   },
 };
