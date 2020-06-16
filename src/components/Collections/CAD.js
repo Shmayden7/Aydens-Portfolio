@@ -24,7 +24,7 @@ const CAD = () => {
       <div>
          <h1 className='heading'>
             <Fade bottom cascade>
-               SolidWorks.
+               C.A.D.
             </Fade>
          </h1>
          <div className='work-content'>
@@ -36,6 +36,7 @@ const CAD = () => {
                   service={project.service}
                   imageSrc={project.imageSrc}
                   url={project.url}
+                  icons={project.icons}
                ></CADProject>
             ))}
          </div>

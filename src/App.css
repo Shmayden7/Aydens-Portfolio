@@ -52,7 +52,7 @@ header h1 {
 
 nav {
    position: fixed;
-   left: 55em;
+   left: 50em;
    top: 6em;
    z-index: 100;
 }
@@ -182,6 +182,15 @@ li .link:hover {
   align-items: flex-start;
 }
 
+.Education {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   left: 15em;
+   top: 8em;
+   align-items: flex-start;
+ }
+
 .SD .heading {
    font-family: "Montserrat", sans-serif;
    font-size: 5em;
@@ -193,6 +202,12 @@ li .link:hover {
   font-size: 5em;
   text-align: left;
 }
+
+.Education .heading {
+   font-family: "Montserrat", sans-serif;
+   font-size: 5em;
+   text-align: left;
+ }
 
 .SD .work-content {
    display: grid;

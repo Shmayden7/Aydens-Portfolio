@@ -66,6 +66,19 @@ const Navbar = () => {
                   <Link
                      className='link'
                      activeClass='active'
+                     to='Education'
+                     spy={true}
+                     smooth={true}
+                     offset={-70}
+                     duration={500}
+                  >
+                     Education
+                  </Link>
+               </li>
+               <li>
+                  <Link
+                     className='link'
+                     activeClass='active'
                      to='contact'
                      spy={true}
                      smooth={true}

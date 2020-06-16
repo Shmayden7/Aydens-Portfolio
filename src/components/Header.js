@@ -9,7 +9,8 @@ const Header = () => {
          <header>
             <h1>
                <Fade bottom cascade>
-                  No, this site is not mobile friendly. Working on that right now.
+                  No, this site is not mobile friendly. Working on that right
+                  now.
                </Fade>
             </h1>
          </header>
@@ -21,22 +22,18 @@ const Header = () => {
                <br></br>
                {data.headerTagline[2]}
                <br></br>
-               <button>
-                  <a
-                     href={`mailto:${data.contactEmail}`}
-                     rel='noopener noreferrer'
-                  >
-                     Contact.
-                  </a>
-               </button>
-               <button>
-                  <a
-                     href={`mailto:${data.contactEmail}`}
-                     rel='noopener noreferrer'
-                  >
-                     Resume.
-                  </a>
-               </button>
+               <a
+                  href={`mailto:${data.contactEmail}`}
+                  rel='noopener noreferrer'
+               >
+                  <button className='black-button'>Contact.</button>
+               </a>
+               <a
+                  href='https://drive.google.com/file/d/1j0h2ew7xdCby3S8CsESPnDXeGBQRf1GS/view?usp=sharing'
+                  rel='noopener noreferrer'
+               >
+                  <button className='black-button'>Resume.</button>
+               </a>
             </p>
          </Fade>
       </div>

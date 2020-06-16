@@ -7,6 +7,7 @@ import SoftwareDev from './components/Collections/SoftwareDev';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import CAD from './components/Collections/CAD';
+import Education from './components/Collections/Education';
 
 function App() {
   return (
@@ -15,17 +16,17 @@ function App() {
       <div className="App-header">
       <Header />
       </div>
-      
       <div className='About'>
         <About />
       </div>
       <div className='SD'>
         <SoftwareDev />
-
       </div>
       <div className='CAD'>
         <CAD />
-
+      </div>
+      <div className='Education'>
+        <Education />
       </div>
       <div className='contact'>
         <Contact />
