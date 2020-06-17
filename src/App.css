@@ -191,6 +191,12 @@ li .link:hover {
    align-items: flex-start;
  }
 
+.waterloo-icon {
+   height: 15%;
+   width: 15%;
+   text-align: right;
+}
+
 .SD .heading {
    font-family: "Montserrat", sans-serif;
    font-size: 5em;
