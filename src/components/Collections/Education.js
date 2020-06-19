@@ -13,10 +13,10 @@ const Education = () => {
          </h1>
          <Fade bottom>
             <Waterloo
-               title='BASc Biomedical Engineering ,   Honours ,   Co-Op'
+               title='BASc Biomedical Engineering, Honours, Co-Op'
                subtitle='University of Waterloo'
-               bgPhoto='img/education/e7.jpg'
-               secondTitle='Biomedical Engineering is a multidisciplinary field that combines biology & engineering, applying engineering principles and materials to medicine and healthcare. Biomedical Engineering is one of, if not the most broad engineering fields. I take 6 or 7 courses per semester, some of which include data structures & algorithms, anatomy, numerical & applied calculus, the physics of medical imaging and many more. I will have 6 Co-Op opportunities throughout my undergrad. I intend on working jobs in software development, product design, and medicine to make my portfolio as diverse as possible.'
+               bgPhoto='img/education/qnc.jpg'
+               secondTitle='Biomedical Engineering is a multidisciplinary field that combines biology & engineering, to create solutions too problems in medicine and healthcare. Biomedical Engineering is one of, if not the most broad engineering fields. I take 6-7 courses per semester, some of which include data structures & algorithms, anatomy, numerical & applied calculus, the physics of medical imaging and many more. I will have 6 Co-Op opportunities throughout my undergrad. I intend on working jobs in software development, product design, and medicine to make my portfolio as diverse as possible.'
             />
          </Fade>
          {/* <Highschool

@@ -16,7 +16,7 @@ const Contact = () => {
             <div className='contact-content'>
                <h1>
                   Let’s Make Something<br></br>
-                  <span className='amazing-color'>Truly Awesome!</span>
+                  <span className='amazing-color'>Truly Amazing!</span>
                </h1>
                <a href={`mailto:${data.contactEmail}`} className='email'>
                   {data.contactEmail}

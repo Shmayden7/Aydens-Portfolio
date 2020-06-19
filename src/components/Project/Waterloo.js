@@ -32,15 +32,18 @@ const Content = styled.div`
 const Title = styled.span`
    font-size: 24px;
    font-weight: 800;
-   color: ${(props) => props.color};
+   display: block;
+   color: #9352ae;
+   margin-bottom: 1%;
 `;
 
 const Subtitle = styled.span`
    margin-top: 8px;
+   margin-right: 5%;
    font-size: 20px;
    font-weight: 800;
-   display: block;
-   color: ${(props) => props.color};
+   display: inline;
+   color: #9CA1AE;
 `;
 
 const Top = styled.div`
@@ -71,9 +74,28 @@ const Btn = styled.span`
    cursor: pointer;
 `;
 
+const Button = styled.a`
+   font-weight: 600;
+   text-decoration: none;
+   letter-spacing: 1px;
+   color: white;
+   background-color: #9CA1AE;
+   display: inline;
+   align-items: center;
+   justify-content: center;
+   width: 20%;
+   border-radius: 20px;
+   margin: auto 4%;
+   padding: 0.7% 3%;
+   cursor: pointer;
+   &:hover {
+      background-color: #9352ae;
+   }
+`;
+
 const SecondTitle = styled.span`
    font-size: 16px;
-   color: #1F2126;
+   color: #1f2126;
    display: block;
    font-weight: 400;
 `;
@@ -81,8 +103,6 @@ const SecondTitle = styled.span`
 const Waterloo = ({
    title,
    subtitle,
-   titleColor = "#9352ae",
-   subtitleColor = "#9CA1AE",
    secondTitle,
    bgPhoto,
    btnIcon,
@@ -94,20 +114,14 @@ const Waterloo = ({
 
       {(title || subtitle) && (
          <Content>
-            {title && <Title color={titleColor}>{title}</Title>}
-            {subtitle && <Subtitle color={subtitleColor}>{subtitle}</Subtitle>}
+            {title && <Title >{title}</Title>}
+
+            {subtitle && <Subtitle >{subtitle}</Subtitle>}
+            <Button href='https://drive.google.com/file/d/1TVjslA5XJGpfLN7is0itqMKNVmucx1Lw/view?usp=sharing'>Transcripts</Button>
+            <Button href='https://ugradcalendar.uwaterloo.ca/page/ENG-Biomedical-Engineering'>Course List</Button>
             {(secondTitle || btnIcon) && (
                <BtnRow>
-                  {secondTitle && (
-                     <SecondTitle >
-                        {secondTitle}
-                     </SecondTitle>
-                  )}
-                  {btnIcon && (
-                     <Btn >
-                        <i className={btnIcon} />
-                     </Btn>
-                  )}
+                  {secondTitle && <SecondTitle>{secondTitle}</SecondTitle>}
                </BtnRow>
             )}
          </Content>

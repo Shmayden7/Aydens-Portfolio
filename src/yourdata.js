@@ -94,6 +94,10 @@ export default {
                key: 2,
                link: "img/icons/css.png",
             },
+            {
+               key: 3,
+               link: "img/icons/styled.png",
+            },
          ],
       },
       {
