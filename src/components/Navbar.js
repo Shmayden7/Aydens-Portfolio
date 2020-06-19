@@ -20,7 +20,7 @@ const Navbar = () => {
                      duration={500}
                      onClick={scrollToTop}
                   >
-                     Home
+                     Home.
                   </Link>
                </li>
                <li>
@@ -33,7 +33,7 @@ const Navbar = () => {
                      offset={-70}
                      duration={500}
                   >
-                     About
+                     About.
                   </Link>
                </li>
                <li>
@@ -46,7 +46,7 @@ const Navbar = () => {
                      offset={-70}
                      duration={500}
                   >
-                     Software Dev
+                     Software Dev.
                   </Link>
                </li>
                <li>
@@ -59,7 +59,20 @@ const Navbar = () => {
                      offset={-70}
                      duration={500}
                   >
-                     CAD
+                     CAD.
+                  </Link>
+               </li>
+               <li>
+                  <Link
+                     className='link'
+                     activeClass='active'
+                     to='WorkExperience'
+                     spy={true}
+                     smooth={true}
+                     offset={-70}
+                     duration={500}
+                  >
+                     Work Experience.
                   </Link>
                </li>
                <li>
@@ -72,7 +85,7 @@ const Navbar = () => {
                      offset={-70}
                      duration={500}
                   >
-                     Education
+                     Education.
                   </Link>
                </li>
                <li>
@@ -85,7 +98,7 @@ const Navbar = () => {
                      offset={-70}
                      duration={500}
                   >
-                     Contact
+                     Contact.
                   </Link>
                </li>
             </ul>

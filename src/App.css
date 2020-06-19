@@ -51,9 +51,9 @@ header h1 {
 }
 
 nav {
-   position: fixed;
-   left: 50em;
-   top: 6em;
+   position: relative;
+   left: 18em;
+   top: 9em;
    z-index: 100;
 }
 
@@ -76,6 +76,10 @@ nav li .link {
 
 li .link:hover {
    opacity: 1;
+   color: white;
+   background-color: black;
+   padding: .5em 1em;
+   margin: 0 1em;
 }
 
 .active {
@@ -191,9 +195,13 @@ li .link:hover {
    align-items: flex-start;
  }
 
-
-
 .waterloo-icon {
+   height: 15%;
+   width: 15%;
+   text-align: right;
+}
+
+.highschool-icon {
    height: 15%;
    width: 15%;
    text-align: right;
@@ -210,6 +218,12 @@ li .link:hover {
   font-size: 5em;
   text-align: left;
 }
+
+.WorkExperience .heading {
+   font-family: "Montserrat", sans-serif;
+   font-size: 5em;
+   text-align: left;
+ }
 
 .Education .heading {
    font-family: "Montserrat", sans-serif;

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import CADProject from "../Project/CADProject";
 import Fade from "react-reveal/Fade";
 import data from "../../yourdata";
-import CADButtons from "../Buttons/CADButtons";
+import Job from '../Project/Job';
+import WorkButtons from '../Buttons/WorkButtons';
 
-const CAD = () => {
+const WorkExperience = () => {
    const [displayNumber, setDisplayNumber] = useState(4);
 
    const seeMore = () => {
@@ -23,23 +23,15 @@ const CAD = () => {
       <div>
          <h1 className='heading'>
             <Fade bottom cascade>
-               C.A.D.
+               Work Experience.
             </Fade>
          </h1>
          <div className='work-content'>
             {data.swProjects.slice(0, displayNumber).map((project) => (
-               <CADProject
-                  key={project.id}
-                  title={project.title}
-                  drive={project.drive}
-                  service={project.service}
-                  imageSrc={project.imageSrc}
-                  url={project.url}
-                  icons={project.icons}
-               />
+               <Job />
             ))}
          </div>
-         <CADButtons
+         <WorkButtons
             displayNumber={displayNumber}
             data={data}
             seeMore={seeMore}
@@ -49,4 +41,4 @@ const CAD = () => {
    );
 };
 
-export default CAD;
+export default WorkExperience;

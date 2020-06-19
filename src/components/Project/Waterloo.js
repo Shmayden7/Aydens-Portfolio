@@ -15,6 +15,7 @@ const Container = styled.div`
    align-items: center;
    justify-content: space-between;
    padding: 20px;
+   margin-bottom: 10%;
 `;
 
 const Content = styled.div`
@@ -38,12 +39,11 @@ const Title = styled.span`
 `;
 
 const Subtitle = styled.span`
-   margin-top: 8px;
    margin-right: 5%;
    font-size: 20px;
    font-weight: 800;
    display: inline;
-   color: #9CA1AE;
+   color: #9ca1ae;
 `;
 
 const Top = styled.div`
@@ -79,14 +79,13 @@ const Button = styled.a`
    text-decoration: none;
    letter-spacing: 1px;
    color: white;
-   background-color: #9CA1AE;
+   background-color: #9ca1ae;
    display: inline;
    align-items: center;
    justify-content: center;
-   width: 20%;
    border-radius: 20px;
    margin: auto 4%;
-   padding: 0.7% 3%;
+   padding: 0.5% 4%;
    cursor: pointer;
    &:hover {
       background-color: #9352ae;
@@ -100,13 +99,7 @@ const SecondTitle = styled.span`
    font-weight: 400;
 `;
 
-const Waterloo = ({
-   title,
-   subtitle,
-   secondTitle,
-   bgPhoto,
-   btnIcon,
-}) => (
+const Waterloo = ({ title, subtitle, secondTitle, bgPhoto, }) => (
    <Container bgPhoto={bgPhoto}>
       <Top>
          <img className='waterloo-icon' src='img/education/waterloo.png' />
@@ -114,12 +107,16 @@ const Waterloo = ({
 
       {(title || subtitle) && (
          <Content>
-            {title && <Title >{title}</Title>}
+            {title && <Title>{title}</Title>}
 
-            {subtitle && <Subtitle >{subtitle}</Subtitle>}
-            <Button href='https://drive.google.com/file/d/1TVjslA5XJGpfLN7is0itqMKNVmucx1Lw/view?usp=sharing'>Transcripts</Button>
-            <Button href='https://ugradcalendar.uwaterloo.ca/page/ENG-Biomedical-Engineering'>Course List</Button>
-            {(secondTitle || btnIcon) && (
+            {subtitle && <Subtitle>{subtitle}</Subtitle>}
+            <Button href='https://drive.google.com/file/d/1TVjslA5XJGpfLN7is0itqMKNVmucx1Lw/view?usp=sharing'>
+               Transcripts
+            </Button>
+            <Button href='https://ugradcalendar.uwaterloo.ca/page/ENG-Biomedical-Engineering'>
+               Course List
+            </Button>
+            {(secondTitle) && (
                <BtnRow>
                   {secondTitle && <SecondTitle>{secondTitle}</SecondTitle>}
                </BtnRow>

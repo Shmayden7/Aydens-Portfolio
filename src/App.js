@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import CAD from './components/Collections/CAD';
 import Education from './components/Collections/Education';
+import WorkExperience from './components/Collections/WorkExperience';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
       </div>
       <div className='CAD'>
         <CAD />
+      </div>
+      <div className='WorkExperience'>
+        <WorkExperience />
       </div>
       <div className='Education'>
         <Education />
