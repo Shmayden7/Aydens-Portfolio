@@ -9,7 +9,7 @@ const Header = () => {
          <header>
             <h1>
                <Fade bottom cascade>
-                  No, this site is not mobile friendly. Working on that right
+                  No, this site is not mobile friendly, Working on that right
                   now.
                </Fade>
             </h1>
@@ -34,6 +34,7 @@ const Header = () => {
                >
                   <button className='black-button'>Resume.</button>
                </a>
+               <img className='mouse-icon' src='img/icons/mouse.png' />
             </p>
          </Fade>
       </div>

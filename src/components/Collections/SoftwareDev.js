@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DevProject from '../Project/DevProject';
+import DevProject from '../Project/SD/DevProject';
 import Fade from "react-reveal/Fade";
 import data from "../../yourdata";
 import SDButtons from '../Buttons/SDButtons';
@@ -36,6 +36,7 @@ const SoftwareDev = () => {
                   imageSrc={project.imageSrc}
                   url={project.url}
                   icons={project.icons}
+                  canClick={project.canClick}
                ></DevProject>
             ))}
          </div>

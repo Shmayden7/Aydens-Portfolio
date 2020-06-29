@@ -1,43 +1,61 @@
 import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
 import data from "../../yourdata";
-import Job from '../Project/Job';
-import WorkButtons from '../Buttons/WorkButtons';
+import JobStack from "./JobStack";
+import Card from "../Project/Card";
+import JobCard from "../Project/JobCard";
 
 const WorkExperience = () => {
-   const [displayNumber, setDisplayNumber] = useState(4);
-
-   const seeMore = () => {
-      if (data.swProjects.length > displayNumber) {
-         setDisplayNumber(displayNumber + 2);
-      }
-   };
-
-   const seeLess = () => {
-      if (displayNumber > 2) {
-         setDisplayNumber(displayNumber - 2);
-      }
-   };
-
    return (
-      <div>
+      <>
          <h1 className='heading'>
             <Fade bottom cascade>
-               Work Experience.
+               Experience.
             </Fade>
          </h1>
-         <div className='work-content'>
-            {data.swProjects.slice(0, displayNumber).map((project) => (
-               <Job />
-            ))}
+         <div className='work-stack'>
+            <JobStack
+               height={500}
+               width={500}
+               background='white'
+               hoverOffset={20}
+            >
+               {data.jobs1.map((job, i) => (
+                  <Card key={i} background={job.background}>
+                     <JobCard {...job} />
+                  </Card>
+               ))}
+            </JobStack>
          </div>
-         <WorkButtons
-            displayNumber={displayNumber}
-            data={data}
-            seeMore={seeMore}
-            seeLess={seeLess}
-         />
-      </div>
+         <div className='work-stack'>
+            <JobStack
+               height={500}
+               width={500}
+               background='white'
+               hoverOffset={20}
+            >
+               {data.jobs2.map((job, i) => (
+                  <Card key={i} background={job.background}>
+                     <JobCard {...job} />
+                  </Card>
+               ))}
+            </JobStack>
+         </div>
+         {/* <div className='work-stack'>
+            <JobStack
+               height={500}
+               width={500}
+               background='white'
+               hoverOffset={20}
+            >
+               {data.jobs3.map((job, i) => (
+                  <Card key={i} background={job.background}>
+                     <JobCard {...job} />
+                  </Card>
+               ))}
+            </JobStack>
+         </div> */}
+      </>
    );
 };
 

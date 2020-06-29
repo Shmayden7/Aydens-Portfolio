@@ -15,7 +15,7 @@ const Container = styled.div`
    align-items: center;
    justify-content: space-between;
    padding: 20px;
-   margin-bottom: 10%;
+   margin-bottom: 7%;
 `;
 
 const Content = styled.div`

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CADProject from "../Project/CADProject";
+import CADProject from "../Project/CAD/CADProject";
 import Fade from "react-reveal/Fade";
 import data from "../../yourdata";
 import CADButtons from "../Buttons/CADButtons";
@@ -36,6 +36,7 @@ const CAD = () => {
                   imageSrc={project.imageSrc}
                   url={project.url}
                   icons={project.icons}
+                  canClick={project.canClick}
                />
             ))}
          </div>

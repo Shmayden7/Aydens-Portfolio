@@ -1,12 +1,12 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import CADIcon from '../Icons/CADIcon';
+import CADIcon from '../../Icons/CADIcon';
 
-const CADProject = ({ title, drive, service, imageSrc, url, icons }) => {
+const CADNoLink = ({ title, drive, service, imageSrc, icons }) => {
    return (
       <Fade bottom>
          <div className='project'>
-            <a href={url}>
+            <a>
                <img src={imageSrc}/>
             </a>
             <h1>{title}<a href={drive}><img src='img/icons/drive.png'/></a></h1>
@@ -19,4 +19,4 @@ const CADProject = ({ title, drive, service, imageSrc, url, icons }) => {
    );
 };
 
-export default CADProject;
+export default CADNoLink;

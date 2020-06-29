@@ -1,13 +1,13 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import GitHubIcon from '@material-ui/icons/GitHub';
-import DevIcon from '../Icons/DevIcon';
+import DevIcon from '../../Icons/DevIcon';
 
-const DevProject = ({ title, github, service, imageSrc, url, icons }) => {
+const SDNoLink = ({ title, github, service, imageSrc, icons }) => {
    return (
       <Fade bottom>
          <div className='project'>
-            <a href={url}>
+            <a>
                <img src={imageSrc}/>
             </a>
             <h1>{title}<a href={github}><GitHubIcon/></a></h1>
@@ -20,4 +20,4 @@ const DevProject = ({ title, github, service, imageSrc, url, icons }) => {
    );
 };
 
-export default DevProject;
+export default SDNoLink;

@@ -46,7 +46,14 @@ header h1 {
    margin-right: 50em;
 }
 
-.nav-bar{
+.mouse-icon {
+   height: 5%;
+   width: 5%;
+   display: block;
+   margin: 3% auto;
+}
+
+.nav-bar {
    background: white;
 }
 
@@ -66,7 +73,7 @@ nav li .link {
    text-decoration: none;
    color: black;
    padding: 1em;
-   opacity: 0.5;
+   opacity: 1;
    transition: all 0.3s ease-in-out;
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
@@ -78,7 +85,7 @@ li .link:hover {
    opacity: 1;
    color: white;
    background-color: black;
-   padding: .5em 1em;
+   padding: 0.5em 1em;
    margin: 0 1em;
 }
 
@@ -163,7 +170,7 @@ li .link:hover {
 }
 
 .football {
-   margin-top: 3em;
+   margin-top: 0.5em;
    height: 30em;
    width: 50em;
 }
@@ -178,12 +185,12 @@ li .link:hover {
 }
 
 .CAD {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  left: 15em;
-  top: 8em;
-  align-items: flex-start;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   left: 15em;
+   top: 8em;
+   align-items: flex-start;
 }
 
 .Education {
@@ -193,7 +200,20 @@ li .link:hover {
    left: 15em;
    top: 8em;
    align-items: flex-start;
- }
+}
+
+.WorkExperience {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   top: 8em;
+   align-items: flex-start;
+}
+
+.work-content {
+   /* justify-content: auto 0; */
+   width: 100%;
+}
 
 .waterloo-icon {
    height: 15%;
@@ -207,6 +227,14 @@ li .link:hover {
    text-align: right;
 }
 
+.click-icon {
+   color: white;
+   height: 50px;
+   width: 50px;
+   margin: 2%;
+   position: absolute;
+}
+
 .SD .heading {
    font-family: "Montserrat", sans-serif;
    font-size: 5em;
@@ -214,22 +242,28 @@ li .link:hover {
 }
 
 .CAD .heading {
-  font-family: "Montserrat", sans-serif;
-  font-size: 5em;
-  text-align: left;
+   font-family: "Montserrat", sans-serif;
+   font-size: 5em;
+   text-align: left;
 }
 
 .WorkExperience .heading {
    font-family: "Montserrat", sans-serif;
    font-size: 5em;
    text-align: left;
- }
+   margin-left: 16.5%;
+}
+
+.work-stack {
+   display: inline;
+   margin: 0 auto;
+}
 
 .Education .heading {
    font-family: "Montserrat", sans-serif;
    font-size: 5em;
    text-align: left;
- }
+}
 
 .SD .work-content {
    display: grid;
@@ -238,9 +272,9 @@ li .link:hover {
 }
 
 .CAD .work-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2em;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 2em;
 }
 
 .project a img {
@@ -260,14 +294,14 @@ li .link:hover {
    margin-left: 0.5em;
 }
 
-.little-icon{
+.little-icon {
    height: 2em;
    width: 2em;
    margin-left: 1em;
    vertical-align: middle;
 }
 
-.social-icon{
+.social-icon {
    margin: 2em 2em;
 }
 
@@ -362,13 +396,15 @@ li .link:hover {
    .work {
       left: 2em;
       top: 2em;
-      align-items: flex-start;
+      align-items: center;
    }
    .work .work-content {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 5em;
+      display: inline;
+      width: 50%;
+      /* grid-template-columns: 2fr;
+      grid-gap: 5em; */
    }
+
    .project img {
       width: 45em;
       height: 45em;

@@ -22,7 +22,7 @@ const Education = () => {
          <Fade bottom>
             <Highschool
                title='Oakville Trafalgar Highschool, Diploma'
-               bgPhoto='img/education/ot.jpg'
+               bgPhoto='img/education/relay.jpg'
                secondTitle=''
             />
          </Fade>
